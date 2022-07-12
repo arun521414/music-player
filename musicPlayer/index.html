@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Music Player</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   
+
+</head>
+<body>
+    
+    <div class="outer-container" >
+
+        <div class="inner-container" >
+
+        <div class="top-div" >
+
+        <span class="material-icons menu-icon" id="menu-icon">
+            menu
+        </span>
+
+        <h2 class="heading" id="heading"></h2>
+        
+        <span class="material-icons search-icon" id="search-icon">
+            search
+        </span>
+
+        <span class="material-icons option-icon" id="option-icon">
+            more_vert
+        </span>
+
+        </div>
+
+        <hr id="hr-1" >
+
+        <div class="main-content" >
+
+            <div class="load-bar" id="load-bar" >
+                <div class="loading" >
+    
+                </div>  
+                <h2>Loading....</h2>
+            </div>
+            
+
+            <div class="import-songs" id="import-songs-div">
+                <h2 id="no-song-heading" >No Songs Available</h2>
+                <input type="file" webkitdirectory multiple class="import-song-input" id="import-song-input" >
+                <button class="import-song-btn" id="import-song-btn" >IMPORT SONGS</button>
+            </div>
+
+            <div class="song-list" id="song-list-div">
+
+            </div>
+
+            <div class="music-player" id="music-player" >
+
+                <input type="range" step="0.1" min="0" max="100" value="0" class="slider" id="slider">
+                <p id="duration-status" >00.00 / 00.00</p>
+                <span class="material-icons loop-icon" id="loop-icon">
+                    loop
+                </span>
+
+
+                <span class="material-icons skip-back-icon" id="skip-back-icon">
+                    skip_previous
+                </span>
+
+                <span class="material-icons play-icon" id="play-icon">
+                    play_arrow
+                </span>
+                <span class="material-icons skip-next-icon" id="skip-next-icon">
+                    skip_next
+                </span>
+                <span class="material-icons volume-icon" id="volume-icon" orient="vertical">
+                   volume_up 
+                </span>
+                <p id="volume-status" >50</p>
+
+                <input type="range" id="volume-seeker" min="0" max="100" step="1" >
+
+
+            </div>
+
+        </div>
+
+
+
+       
+                <!-- overlay -->
+
+        <div class="overlay" id="overlay" >
+        </div>
+
+        <!-- side nav -->
+
+        <div class="side-nav" id="side-nav">
+        
+            <div class="player-icon" >
+                <span class="material-icons close-icon" id="close-icon">
+                    close
+                </span>
+                <img src="images/player-icon.png"  >
+                <h2>Kathaipoomaaa....</h2>
+            </div>
+            <div class="side-nav-options" >
+                <li id="all-songs" >ALL SONGS</li>
+                <li id="play-list" >PLAYLIST</li>
+                <li id="new-playlist" >NEW PLAYLIST</li>
+                <li id="favourite" >FAVOURITE</li>
+                <li id="sleep" >SLEEP</li>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div>
+    </div>
+</body>
+</html>
+
+<script src='script.js'></script>
+<link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
